@@ -15,7 +15,11 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        totalScore++;
-        textScore.text = totalScore.ToString();
+        if (!other.gameObject.CompareTag("Hit"))
+        {
+            totalScore++;
+            textScore.text = totalScore.ToString();
+        }
+        
     }
 }
