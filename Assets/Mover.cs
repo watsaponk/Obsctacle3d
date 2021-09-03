@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [Range(1f, 5f)] public float speed = 1f;
+    [Range(5f, 15f)] public float speed = 8f;
     // Update is called once per frame
     void Update()
     {
